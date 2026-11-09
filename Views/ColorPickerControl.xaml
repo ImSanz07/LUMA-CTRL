@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="LumaCtrl.Views.ColorPickerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MinWidth="220">
+
+    <StackPanel>
+
+        <TextBlock Text="COLOR SELECTOR"
+                   Foreground="#78838D"
+                   FontSize="11"
+                   Margin="0,0,0,12"/>
+
+        <!-- Full-spectrum colour wheel -->
+        <Grid Width="250"
+              Height="250"
+              HorizontalAlignment="Center"
+              Margin="0,0,0,12">
+
+            <Image x:Name="ColorWheelImage"
+                   Width="250"
+                   Height="250"
+                   Stretch="Fill"/>
+
+            <Canvas x:Name="WheelCanvas"
+                    Width="250"
+                    Height="250"
+                    Background="Transparent"
+                    ClipToBounds="True"
+                    MouseLeftButtonDown="Wheel_MouseLeftButtonDown"
+                    MouseMove="Wheel_MouseMove"
+                    MouseLeftButtonUp="Wheel_MouseLeftButtonUp"
+                    LostMouseCapture="Wheel_LostMouseCapture">
+
+                <Ellipse x:Name="PickerIndicator"
+                         Width="16"
+                         Height="16"
+                         Stroke="White"
+                         StrokeThickness="2"
+                         Fill="Transparent"
+                         IsHitTestVisible="False"/>
+            </Canvas>
+
+        </Grid>
+
+        <!-- HEX input -->
+        <TextBlock Text="HEX VALUE"
+                   Foreground="#78838D"
+                   FontSize="10"
+                   Margin="0,4,0,6"/>
+
+        <TextBox x:Name="HexInput"
+                 Text="#FF453A"
+                 Background="#0B0D10"
+                 Foreground="#FFFFFF"
+                 BorderBrush="#293139"
+                 Padding="9"
+                 FontSize="13"
+                 TextChanged="HexInput_TextChanged"/>
+
+    </StackPanel>
+</UserControl>
