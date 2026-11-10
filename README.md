@@ -57,7 +57,11 @@ Your presets are not stored in the GitHub repository.
 
 <!-- Add screenshots using:
 ![LUMA//CTRL Main Interface](docs/images/main-window.png)
+
 -->
+[LUMA//CTRL Main Interface](docs/images/colourpicker.jpg)
+
+[LUMA//CTRL Colour Picker](docs/images/mainwindow.jpg)
 
 ---
 
