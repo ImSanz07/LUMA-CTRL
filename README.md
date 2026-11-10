@@ -55,8 +55,6 @@ Your presets are not stored in the GitHub repository.
 
 ## Screenshots
 
-Screenshots of the application will be added here.
-
 <!-- Add screenshots using:
 ![LUMA//CTRL Main Interface](docs/images/main-window.png)
 -->
@@ -164,7 +162,7 @@ This makes it easier to add support for additional BLE controllers without mixin
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/LUMA-CTRL.git
+git clone https://github.com/ImSanz07/LUMA-CTRL.git
 cd LUMA-CTRL
 ```
 
